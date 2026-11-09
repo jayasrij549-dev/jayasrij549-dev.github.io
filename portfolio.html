@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K. Jayasri | Portfolio</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+<style>
+:root{--bg:#0f1020;--card:rgba(255,255,255,.06);--line:rgba(255,255,255,.12);--text:#eceefb;--muted:#a9adc9;--a:#8b5cf6;--b:#06b6d4}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#f6f5ff;--card:#fff;--line:#e3e0f5;--text:#1d1b3a;--muted:#5c5a7e}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}
+nav{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:14px 6%;background:var(--bg);border-bottom:1px solid var(--line)}
+nav b{font-size:1.2rem;background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+nav div a{margin-left:18px;color:var(--muted);font-size:.95rem}
+nav div a:hover{color:var(--text)}
+section{padding:80px 6%;max-width:1100px;margin:auto}
+h2{font-size:2rem;margin-bottom:28px}
+h2 span{background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center}
+.hi{color:var(--b);font-weight:600}
+.hero h1{font-size:clamp(2.4rem,7vw,4.4rem);line-height:1.1;margin:10px 0}
+.hero h1 span{background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font-size:1.3rem;color:var(--muted);min-height:2em}
+.hero p.about{max-width:620px;color:var(--muted);margin:14px 0 28px}
+.btn{display:inline-block;padding:12px 26px;border-radius:30px;font-weight:600;margin:0 10px 10px 0;transition:.25s}
+.p{background:linear-gradient(90deg,var(--a),var(--b));color:#fff}
+.s{border:1px solid var(--line);color:var(--text)}
+.btn:hover{transform:translateY(-3px)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:var(--a)}
+.card h3{margin-bottom:8px;font-size:1.1rem}
+.card p{color:var(--muted);font-size:.95rem}
+.tag{display:inline-block;font-size:.75rem;padding:3px 10px;border-radius:20px;border:1px solid var(--line);color:var(--b);margin:12px 6px 0 0}
+.num{font-size:2rem;font-weight:700;color:var(--a)}
+.skill{margin-bottom:16px}
+.skill div{display:flex;justify-content:space-between;font-size:.95rem;margin-bottom:6px}
+.bar{height:9px;border-radius:9px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;width:0;border-radius:9px;background:linear-gradient(90deg,var(--a),var(--b));transition:width 1.2s ease}
+.ico{font-size:2rem;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chips span{padding:6px 14px;border-radius:20px;font-size:.9rem;font-weight:600;color:#fff;background:linear-gradient(90deg,var(--a),var(--b))}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px}
+.edu{border-left:3px solid var(--a);padding-left:18px;margin-bottom:22px}
+.edu small{color:var(--muted)}
+.contact a.card{display:block;margin-bottom:14px}
+footer{text-align:center;padding:30px;color:var(--muted);border-top:1px solid var(--line);font-size:.9rem}
+.reveal{opacity:0;transform:translateY(30px);transition:.8s}
+.reveal.on{opacity:1;transform:none}
+@media(max-width:640px){nav div a{margin-left:10px;font-size:.85rem}section{padding:60px 6%}}
+</style>
+</head>
+<body>
+
+<nav><b>Jayasri.</b>
+<div><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav>
+
+<section class="hero" id="home">
+<span class="hi">Hello, I’m</span>
+<h1><span>K. Jayasri</span></h1>
+<div class="role" id="role"></div>
+<p class="about">MCA student and BCA graduate from Tirunelveli. I enjoy building clean, useful web applications with Python, SQL, HTML, CSS and PHP, and I’m looking for an opportunity to learn and grow in tech.</p>
+<div><a class="btn p" href="#projects">View My Work</a><a class="btn s" href="#contact">Contact Me</a></div>
+</section>
+
+<section id="about">
+<h2 class="reveal">About <span>Me</span></h2>
+<div class="two reveal">
+<div>
+<p style="color:var(--muted)">I’m a technology student who likes turning ideas into working applications. My interests are Technical Support, Software Development, Web Designing and Frontend Development. I’m a quick learner with strong analytical and communication skills, a good team player with a customer-friendly approach, and I enjoy problem-solving and debugging.</p>
+</div>
+<div>
+<div class="edu"><b>MCA</b><br>St. Xavier’s College, Tirunelveli<br><small>Pursuing</small></div>
+<div class="edu"><b>BCA</b><br>Sarah Tucker College, Tirunelveli<br><small>Completed</small></div>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<h2 class="reveal">My <span>Skills</span></h2>
+<div class="grid">
+<div class="card reveal"><div class="ico">💻</div><h3>Programming</h3><div class="chips"><span>Python</span><span>C++</span></div></div>
+<div class="card reveal"><div class="ico">🌐</div><h3>Web</h3><div class="chips"><span>HTML</span><span>CSS</span><span>PHP</span></div></div>
+<div class="card reveal"><div class="ico">🗄️</div><h3>Database</h3><div class="chips"><span>SQL</span></div></div>
+<div class="card reveal"><div class="ico">🧠</div><h3>Core Strengths</h3><div class="chips"><span>Software Engineering</span><span>Problem-solving</span><span>Debugging</span></div></div>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="reveal">My <span>Projects</span></h2>
+<div class="grid">
+<div class="card reveal"><div class="num">01</div><h3>Smart Campus Placement System</h3><p>Helps students prepare for and take part in campus placements. Includes a mock test module with one-time attempts, result review and score-based badges, plus company-wise selection rounds and interview selection notifications.</p></div>
+<div class="card reveal"><div class="num">02</div><h3>IT Helpdesk Ticketing System</h3><p>Employees raise tickets by category and priority and agents resolve them. Has role-based access (employee, agent, admin), ticket assignment, status tracking (Open, In Progress, Resolved, Closed), comments, search and filters, and a dashboard with ticket counts.</p></div>
+<div class="card reveal"><div class="num">03</div><h3>Online Complaint Management System</h3><p>Students submit college and hostel complaints and track their status. The admin panel reviews complaints by category and updates status from Submitted to Resolved.</p></div>
+<div class="card reveal"><div class="num">04</div><h3>Alumni Management System</h3><p>Stores and manages alumni details in one place. I designed the interface with HTML and CSS and implemented the application logic in Python.</p></div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2 class="reveal">Get In <span>Touch</span></h2>
+<div class="reveal">
+<a class="card" href="tel:+916380642663"><h3>📞 Phone</h3><p>+91 63806 42663</p></a>
+<a class="card" href="mailto:jayasrij549@gmail.com"><h3>✉️ Email</h3><p>jayasrij549@gmail.com</p></a>
+<a class="card" href="https://www.linkedin.com/in/jayasrikumar005" target="_blank" rel="noopener"><h3>💼 LinkedIn</h3><p>linkedin.com/in/jayasrikumar005</p></a>
+</div>
+</section>
+
+<footer>© 2026 K. Jayasri. Made with HTML, CSS and JavaScript.</footer>
+
+<script>
+var roles=["Aspiring Software Developer","Frontend & Web Designer","Technical Support Enthusiast"],r=0,c=0,del=false,el=document.getElementById("role");
+function type(){var w=roles[r];el.textContent=w.slice(0,c);
+if(!del&&c<w.length){c++;setTimeout(type,70)}
+else if(!del){del=true;setTimeout(type,1400)}
+else if(c>0){c--;setTimeout(type,35)}
+else{del=false;r=(r+1)%roles.length;setTimeout(type,300)}}
+type();
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("on");e.target.querySelectorAll("[data-w]").forEach(function(b){b.style.width=b.dataset.w})}})},{threshold:.15});
+document.querySelectorAll(".reveal").forEach(function(x){io.observe(x)});
+</script>
+</body>
+</html>
